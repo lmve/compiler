@@ -1,0 +1,28 @@
+//�������������Ĳ��ԣ������������������нϴ������100���
+void main(){
+    int a = 1 ;
+
+    int N = read() ;
+    int M = read() ;
+    a = sum(max(M,N),100) ;
+    write(a);
+
+}
+
+int sum(int sumx,int sumy){
+
+    int result ;
+    result = sumx + sumy ;
+
+    return result ;
+
+}
+
+int max(int mx,int my){
+
+    int result ;
+    if (mx >= my) { result = mx ;}
+	else {result = my;}
+    return result ;
+
+}

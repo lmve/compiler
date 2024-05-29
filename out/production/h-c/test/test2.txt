@@ -1,0 +1,30 @@
+//if and while,�׳�
+void main()
+
+{
+	int i,factor,n = 0;
+
+  if(n<1)
+{
+	factor=0;
+
+    }
+	
+    else {
+
+       factor=1;
+
+    }
+
+  while(i<n)
+{
+
+    i=i+1;
+
+    factor=factor*i;
+
+    }
+
+  write(factor);
+
+}

@@ -1,0 +1,26 @@
+int factor(int m) {
+  int fa;
+  if(m<=1) {
+	fa=1;
+     }
+   if(m>1)
+   {
+       fa=m*factor(m-1);
+   }
+   return fa;
+}
+
+
+void main()
+
+{
+
+   int n;
+	
+   n=read();
+
+   write(factor(n));
+
+}
+
+

@@ -1,0 +1,33 @@
+  0	     main	         	         	         
+  1	        =	        1	         	        a
+  2	     call	     read	         	   $___t0
+  3	        =	   $___t0	         	        N
+  4	     call	     read	         	   $___t1
+  5	        =	   $___t1	         	        M
+  6	       >=	        M	        N	   $___t2
+  7	       jz	   $___t2	         	       10
+  8	        =	        M	         	   result
+  9	        j	         	         	       11
+ 10	        =	        N	         	   result
+ 11	        +	   result	      100	   $___t3
+ 12	        =	   $___t3	         	        a
+ 13	     para	        a	         	         
+ 14	     call	    write	         	   $___t4
+ 15	      sys	         	         	         
+
+
+
+1  :(=, 1, , a)
+2  :(call, read, , T26)
+3  :(=, T26, , N)
+4  :(call, read, , T27)
+5  :(=, T27, , M)
+6  :(>=, M, N, T28)
+7  :(jnz, T28, , 11)
+8  :(jz, , , 9)
+9  :(=, N, , result)
+10 :(j, , , 12)
+11 :(=, M, , result)
+12 :(+, result, 100, T31)
+13 :(=, T31, , a)
+14 :(call, write, [a], T33)

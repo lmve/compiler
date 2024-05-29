@@ -1,0 +1,34 @@
+  0	     main	         	         	         
+  1	        =	        0	         	      sum
+  2	     call	     read	         	   $___t0
+  3	        =	   $___t0	         	        N
+  4	        =	        1	         	        i
+  5	       <=	        i	        N	   $___t1
+  6	       jz	   $___t1	         	       14
+  7	      jnz	   $___t1	         	       11
+  8	        +	        i	        1	   $___t2
+  9	        =	   $___t2	         	        i
+ 10	        j	         	         	        5
+ 11	        +	      sum	        i	   $___t3
+ 12	        =	   $___t3	         	      sum
+ 13	        j	         	         	        8
+ 14	     para	      sum	         	         
+ 15	     call	    write	         	   $___t4
+ 16	      sys	         	         	         
+
+
+1  :(main, , , )
+2  :(=, 0, , sum)
+3  :(call, read, , T1)
+4  :(=, T1, , N)
+5  :(=, 1, , i)
+6  :(<=, i, N, T4)
+7  :(jz, T4, , 13)
+8  :(+, sum, i, T5)
+9  :(=, T5, , sum)
+10 :(+, i, 1, T7)
+11 :(=, T7, , i)
+12 :(j, , , 6)
+13 :(para, sum, , )
+14 :(call, write, , T9)
+15 :(sys, , , )

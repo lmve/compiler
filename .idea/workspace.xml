@@ -1,0 +1,736 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lombok.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Clike/compiler.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Clike/kernel/interpreter/Interpreter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/CiFaCompiler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/constant/Constant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/constant/WordStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/exception/exegesisException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/status/exegesis.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/strategy/ResolveStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/token/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Clike/ui/DataInputFiled.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/h-c.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictldy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/predictldy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/Compiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/CompilerClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/analyser/Analyser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/analyser/Analyser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/analyser/FourItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/analyser/FourItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/analyser/FuncInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/analyser/FuncInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/analyser/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/analyser/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/analyser/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/analyser/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/analyser/VarInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/analyser/VarInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/client/ProxyCompileClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/client/ProxyCompileClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/complier/Compiler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/complier/SemanticClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/error/Error.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/error/Error.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/interpreter/ASCII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/interpreter/ASCII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/interpreter/Activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/interpreter/Activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/interpreter/Interpreter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/parser/Grammar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/parser/Grammar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/parser/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/parser/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/parser/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/parser/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/tokenizer/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/tokenizer/Token.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/tokenizer/TokenType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/tokenizer/TokenType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/code/tokenizer/Tokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/tokenizer/Tokenizer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/constant/InitialStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/constant/InitialStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/constant/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/constant/Word.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/constant/WordDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/constant/WordDefinition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/constant/WordMappingPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/constant/WordMappingPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/constant/WordPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/constant/WordPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/constant/WordStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/exception/CommentMismatchException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/exception/WordAnalyzerException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/exception/WordAnalyzerException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/handle/AnalyzerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/handle/AnalyzerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/handle/StringStreamResolver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/handle/StringStreamResolver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/lexicalnalyzer/Client.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/lexicalnalyzer/LexicalAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/lexicalnalyzer/LexicalAnalyzer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/status/CommentStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/strategy/CharacterResolveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/strategy/CharacterResolveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/strategy/IdentifierResolveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/strategy/IdentifierResolveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/strategy/NumberResoleStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/strategy/NumberResoleStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/strategy/OtherResolveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/strategy/OtherResolveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/strategy/ResolveStrategy.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/strategy/StringResolveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/strategy/StringResolveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/strategy/SymbolResolveStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/strategy/SymbolResolveStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/lexer/token/TokenPool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/lexer/token/TokenPool.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/run/NewInterpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/run/NewInterpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/target/TargetCodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/target/TargetCodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/target/component/FourItemOperator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/target/component/FourItemOperator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/target/component/Register.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/target/component/Register.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/target/component/TargetCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/target/component/TargetCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/core/target/component/TargetInstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/kernel/target/component/TargetInstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/ui/OpenFileButton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/util/FileReaderUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/FILE/FileReaderUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/sample/compiler/util/FileUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Clike/FILE/FileUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/test.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/test1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/test2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/test3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/test4.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/test5.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test1_asm.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test1_inter_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test1_symbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test1_token.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test2_asm.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test2_inter_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test2_symbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test2_token.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test3_asm.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test3_inter_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test3_symbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test3_token.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test4.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test4_1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test4_1_asm.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test4_1_inter_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test4_1_symbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test4_1_token.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test4_asm.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test4_inter_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test4_symbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test4_token.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test5.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test5_asm.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test5_inter_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test5_symbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test5_token.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test6.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test6_asm.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test6_inter_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test6_symbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test6_token.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test7.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test7_asm.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test7_inter_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test7_symbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test7_token.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test8.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test8_asm.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test8_inter_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test8_symbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test8_token.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test9.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test9_asm.asm" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test9_inter_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test9_symbol.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resource/test/前10组测试用例及其各阶段的结果样例/test9_token.txt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DebuggerManager">
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true" converted="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
+    <ui_properties converted="true" />
+    <breakpoint_rules converted="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/Clike/kernel/parser/Grammar.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/Clike/kernel/parser/Producer.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/Clike/kernel/parser/Parser.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/Clike/control.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/resource/keyword.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/main/Clike/compiler.fxml" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/src/sample/Main.java" />
+        <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1612" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectId" id="28YbE3pku1IQl37aJsPXT9cIbQm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaFxApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaFxApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JavaFxApplication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="OverrideImplement.combined" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dynamic.classpath" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../compiler_testing" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.1954698" />
+    <property name="project.structure.side.proportion" value="0.4113402" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="sample" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\其然乐衣Letitbe\学业课程\大三下\编译原理\实验\other\11903990212黄海_编译原理课程设计\程序\桌面端\h-c\src\main\sample\compiler\util" />
+      <recent name="D:\其然乐衣Letitbe\学业课程\大三下\编译原理\实验\other\11903990212黄海_编译原理课程设计\程序\桌面端\h-c\src\main\sample\compiler\core\lexer\strategy" />
+      <recent name="D:\其然乐衣Letitbe\学业课程\大三下\编译原理\实验\other\11903990212黄海_编译原理课程设计\程序\桌面端\h-c\src\main\sample\compiler\core\lexer\handle" />
+      <recent name="D:\编译原理\参考项目\h-c\src\main\sample\compiler\core\lr" />
+      <recent name="D:\编译原理\参考项目\h-c\src\resource\test" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\jcode\LMcompiler\compiler\src\resource\test" />
+      <recent name="G:\jcode\LMcompiler\compiler\src\resource\test1" />
+      <recent name="G:\jcode\LMcompiler\compiler\src\main\Clike" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="sample.compiler.core.lexer.constant" />
+      <recent name="sample.compiler.core.lexer.token" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Main">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+    <configuration name="ClientGui" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ClientGui" />
+      <module name="LM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Compiler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Clike.kernel.complier.Compiler" />
+      <module name="LM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Clike.kernel.complier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LR1_Synax" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.common.core.lr.LR1_Synax" />
+      <module name="LM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.common.core.lr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LRClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="sample.compiler.core.lr.LRClient" />
+      <module name="LM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.common.core.lr.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="Clike.Main" />
+      <module name="LM" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.common.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TargetCodeGenerator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Clike.kernel.target.TargetCodeGenerator" />
+      <module name="LM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Clike.kernel.target.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file enabled="true" id="idea.log" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.ClientGui" />
+      <item itemvalue="Application.Compiler" />
+      <item itemvalue="Application.LR1_Synax" />
+      <item itemvalue="Application.LRClient" />
+      <item itemvalue="Application.TargetCodeGenerator" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TargetCodeGenerator" />
+        <item itemvalue="Application.LRClient" />
+        <item itemvalue="Application.LR1_Synax" />
+        <item itemvalue="Application.Compiler" />
+        <item itemvalue="Application.ClientGui" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+  </component>
+  <component name="StructuralSearchPlugin">
+    <searchConfiguration name="Unnamed" created="1715418766652" text="attributeMap" recursive="false" caseInsensitive="false" type="JAVA" pattern_context="default" scope_type="PROJECT" scope_descriptor="" history="1">
+      <constraint name="__context__" within="" contains="" />
+    </searchConfiguration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+      <created>1359379246138</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1359379246138</updated>
+      <workItem from="1359379250712" duration="1302000" />
+      <workItem from="1651396353966" duration="15384000" />
+      <workItem from="1651724378156" duration="4017000" />
+      <workItem from="1652171915903" duration="807000" />
+      <workItem from="1652249434400" duration="1433000" />
+      <workItem from="1652265258339" duration="3000" />
+      <workItem from="1653019587120" duration="9200000" />
+      <workItem from="1653030590436" duration="2000" />
+      <workItem from="1653030748311" duration="577000" />
+      <workItem from="1653031550689" duration="7260000" />
+      <workItem from="1653101598575" duration="40171000" />
+      <workItem from="1653220355969" duration="1684000" />
+      <workItem from="1653224648263" duration="600000" />
+      <workItem from="1653273754680" duration="18326000" />
+      <workItem from="1682515016706" duration="333000" />
+      <workItem from="1682515514087" duration="115000" />
+      <workItem from="1682847512870" duration="6830000" />
+      <workItem from="1682872563092" duration="1417000" />
+      <workItem from="1682874478661" duration="29000" />
+      <workItem from="1683051299583" duration="1611000" />
+      <workItem from="1683093311409" duration="4814000" />
+      <workItem from="1683098502325" duration="6495000" />
+      <workItem from="1683303529309" duration="313000" />
+      <workItem from="1683305369221" duration="1412000" />
+      <workItem from="1683386934133" duration="1759000" />
+      <workItem from="1683463058051" duration="7424000" />
+      <workItem from="1683478783374" duration="3425000" />
+      <workItem from="1683542447535" duration="329000" />
+      <workItem from="1683633170992" duration="4702000" />
+      <workItem from="1683648665366" duration="2570000" />
+      <workItem from="1683651387468" duration="1418000" />
+      <workItem from="1683652978320" duration="2587000" />
+      <workItem from="1683723065417" duration="3729000" />
+      <workItem from="1683943876121" duration="3036000" />
+      <workItem from="1684072390341" duration="2968000" />
+      <workItem from="1684128518071" duration="1356000" />
+      <workItem from="1684134842433" duration="9000" />
+      <workItem from="1684135326003" duration="785000" />
+      <workItem from="1684152403199" duration="23000" />
+      <workItem from="1684197553098" duration="616000" />
+      <workItem from="1684238305622" duration="3774000" />
+      <workItem from="1684242779482" duration="1021000" />
+      <workItem from="1684247525075" duration="54000" />
+      <workItem from="1684254016000" duration="20000" />
+      <workItem from="1684285881985" duration="187000" />
+      <workItem from="1684303949159" duration="11000" />
+      <workItem from="1714887997788" duration="2435000" />
+      <workItem from="1714897482860" duration="4818000" />
+      <workItem from="1715131309604" duration="66000" />
+      <workItem from="1715136122424" duration="3032000" />
+      <workItem from="1715140997227" duration="20929000" />
+      <workItem from="1715239039385" duration="6492000" />
+      <workItem from="1715320456756" duration="6612000" />
+      <workItem from="1715346667310" duration="638000" />
+      <workItem from="1715351616811" duration="2377000" />
+      <workItem from="1715402985480" duration="3344000" />
+      <workItem from="1715406499543" duration="10992000" />
+      <workItem from="1715432488223" duration="5349000" />
+      <workItem from="1715780515320" duration="2559000" />
+      <workItem from="1715783565577" duration="595000" />
+      <workItem from="1715843412502" duration="1776000" />
+      <workItem from="1715864475955" duration="9529000" />
+      <workItem from="1715925303963" duration="10481000" />
+      <workItem from="1715955166803" duration="1898000" />
+      <workItem from="1716012923250" duration="3266000" />
+      <workItem from="1716109826034" duration="17115000" />
+      <workItem from="1716176796631" duration="15534000" />
+      <workItem from="1716218153656" duration="229000" />
+      <workItem from="1716279372032" duration="16137000" />
+      <workItem from="1716303720009" duration="235000" />
+      <workItem from="1716307926340" duration="569000" />
+      <workItem from="1716338403627" duration="8558000" />
+      <workItem from="1716459940134" duration="10645000" />
+      <workItem from="1716526104312" duration="1166000" />
+      <workItem from="1716538984616" duration="2872000" />
+      <workItem from="1716635846906" duration="4104000" />
+      <workItem from="1716643144881" duration="2435000" />
+      <workItem from="1716721794485" duration="621000" />
+      <workItem from="1716722464145" duration="696000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1302000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24967742" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32962447" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.asm" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
+    <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Clike/kernel/tokenizer/Token.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Clike/kernel/target/Asm_Code.java</url>
+          <line>517</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Clike/kernel/analyser/intermediate.java</url>
+          <line>222</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/Clike/kernel/analyser/intermediate.java</url>
+          <line>235</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="17" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="170" selection-end="170" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="45" selection-start="467" selection-end="467" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="27" selection-start="136" selection-end="136" vertical-scroll-proportion="0.17171717">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

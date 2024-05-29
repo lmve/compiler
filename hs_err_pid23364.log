@@ -1,0 +1,308 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 5608 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (memory/allocation.inline.hpp:61), pid=23364, tid=0x00000000000063b0
+#
+# JRE version: OpenJDK Runtime Environment (8.0_312-b07) (build 1.8.0_312-b07)
+# Java VM: OpenJDK 64-Bit Server VM (25.312-b07 mixed mode windows-amd64 compressed oops)
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000026ec8922800):  JavaThread "C1 CompilerThread3" daemon [_thread_in_vm, id=25520, stack(0x0000007fdd600000,0x0000007fdd700000)]
+
+Stack: [0x0000007fdd600000,0x0000007fdd700000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+
+
+Current CompileTask:
+C1:   4414 1671       3       javafx.scene.Scene$MouseHandler::process (735 bytes)
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x0000026ec96b9000 JavaThread "Prism Font Disposer" daemon [_thread_blocked, id=25816, stack(0x0000007fde400000,0x0000007fde500000)]
+  0x0000026ec91a8000 JavaThread "Thread-3" daemon [_thread_in_native, id=8840, stack(0x0000007fddf00000,0x0000007fde000000)]
+  0x0000026ec91c3800 JavaThread "JavaFX-Launcher" [_thread_blocked, id=23932, stack(0x0000007fde000000,0x0000007fde100000)]
+  0x0000026ec8fda800 JavaThread "JavaFX Application Thread" [_thread_blocked, id=3964, stack(0x0000007fddb00000,0x0000007fddc00000)]
+  0x0000026ec8f93800 JavaThread "Thread-1" daemon [_thread_blocked, id=8788, stack(0x0000007fdda00000,0x0000007fddb00000)]
+  0x0000026ec8c7d800 JavaThread "QuantumRenderer-0" daemon [_thread_blocked, id=22812, stack(0x0000007fdd900000,0x0000007fdda00000)]
+  0x0000026ec88f2800 JavaThread "Service Thread" daemon [_thread_blocked, id=21972, stack(0x0000007fdd700000,0x0000007fdd800000)]
+=>0x0000026ec8922800 JavaThread "C1 CompilerThread3" daemon [_thread_in_vm, id=25520, stack(0x0000007fdd600000,0x0000007fdd700000)]
+  0x0000026ec8920800 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=2088, stack(0x0000007fdd500000,0x0000007fdd600000)]
+  0x0000026ec88f1000 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=24016, stack(0x0000007fdd400000,0x0000007fdd500000)]
+  0x0000026ec88ee800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=6612, stack(0x0000007fdd300000,0x0000007fdd400000)]
+  0x0000026ec88e9800 JavaThread "Monitor Ctrl-Break" daemon [_thread_in_native, id=2280, stack(0x0000007fdd200000,0x0000007fdd300000)]
+  0x0000026ec6b38000 JavaThread "Attach Listener" daemon [_thread_blocked, id=12632, stack(0x0000007fdd100000,0x0000007fdd200000)]
+  0x0000026ec6b26800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=16252, stack(0x0000007fdd000000,0x0000007fdd100000)]
+  0x0000026ec6ab0800 JavaThread "Finalizer" daemon [_thread_blocked, id=364, stack(0x0000007fdcf00000,0x0000007fdd000000)]
+  0x0000026ec6aa9000 JavaThread "Reference Handler" daemon [_thread_blocked, id=5836, stack(0x0000007fdce00000,0x0000007fdcf00000)]
+  0x0000026eabaf3000 JavaThread "main" [_thread_blocked, id=8544, stack(0x0000007fdc400000,0x0000007fdc500000)]
+
+Other Threads:
+  0x0000026ec6a77000 VMThread [stack: 0x0000007fdcd00000,0x0000007fdce00000] [id=25156]
+  0x0000026ec897b000 WatcherThread [stack: 0x0000007fdd800000,0x0000007fdd900000] [id=22424]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000026eabaf0150] CodeCache_lock - owner thread: 0x0000026ec8922800
+[0x0000026eabaf1be0] AdapterHandlerLibrary_lock - owner thread: 0x0000026ec8f93800
+[0x0000026eabaf1d60] Compile_lock - owner thread: 0x0000026ec8922800
+[0x0000026eabaf0d60] MethodCompileQueue_lock - owner thread: 0x0000026ec8922800
+
+heap address: 0x00000006c2a00000, size: 4054 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x00000007c0000000
+
+Heap:
+ PSYoungGen      total 75776K, used 63857K [0x000000076b900000, 0x0000000770d80000, 0x00000007c0000000)
+  eden space 65024K, 98% used [0x000000076b900000,0x000000076f75c560,0x000000076f880000)
+  from space 10752K, 0% used [0x0000000770300000,0x0000000770300000,0x0000000770d80000)
+  to   space 10752K, 0% used [0x000000076f880000,0x000000076f880000,0x0000000770300000)
+ ParOldGen       total 173568K, used 0K [0x00000006c2a00000, 0x00000006cd380000, 0x000000076b900000)
+  object space 173568K, 0% used [0x00000006c2a00000,0x00000006c2a00000,0x00000006cd380000)
+ Metaspace       used 17875K, capacity 18790K, committed 19072K, reserved 1067008K
+  class space    used 2439K, capacity 2658K, committed 2688K, reserved 1048576K
+
+Card table byte_map: [0x0000026ebcc70000,0x0000026ebd460000] byte_map_base: 0x0000026eb965b000
+
+Marking Bits: (ParMarkBitMap*) 0x000000005cda1860
+ Begin Bits: [0x0000026ebd9b0000, 0x0000026ec1908000)
+ End Bits:   [0x0000026ec1908000, 0x0000026ec5860000)
+
+Polling page: 0x0000026eabd30000
+
+CodeCache: size=245760Kb used=5555Kb max_used=5561Kb free=240204Kb
+ bounds [0x0000026ead8b0000, 0x0000026eade30000, 0x0000026ebc8b0000]
+ total_blobs=2295 nmethods=1653 adapters=552
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 2.802 Thread 0x0000026ec8922800 nmethod 1669 0x0000026eade1f050 code [0x0000026eade1f1e0, 0x0000026eade1f6e0]
+Event: 2.802 Thread 0x0000026ec8922800 1667       3       java.lang.String::valueOf (14 bytes)
+Event: 2.802 Thread 0x0000026ec8922800 nmethod 1667 0x0000026eade1f850 code [0x0000026eade1f9c0, 0x0000026eade1fc10]
+Event: 2.802 Thread 0x0000026ec8922800 1666       3       sun.nio.cs.StreamEncoder::ensureOpen (18 bytes)
+Event: 2.803 Thread 0x0000026ec8922800 
+
+Event: 4.408 Thread 0x0000026ec8922800 1670       3       javafx.scene.Scene$MouseHandler::access$1500 (7 bytes)
+Event: 4.408 Thread 0x0000026ec8922800 nmethod 1670 0x0000026eada3f910 code [0x0000026eada3fa80, 0x0000026eada3fbf0]
+Event: 4.408 Thread 0x0000026ec8922800 1673       3       javafx.scene.Scene::access$4802 (6 bytes)
+Event: 4.408 Thread 0x0000026ec8922800 nmethod 1673 0x0000026ead9d3890 code [0x0000026ead9d39e0, 0x0000026ead9d3b38]
+Event: 4.408 Thread 0x0000026ec8922800 1671       3       javafx.scene.Scene$MouseHandler::process (735 bytes)
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (10 events):
+Event: 1.510 Thread 0x0000026ec8fda800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000026eada42f90 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 1.510 Thread 0x0000026ec8fda800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000026eada42f90 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 1.510 Thread 0x0000026ec8fda800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000026eada42f90 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 1.512 Thread 0x0000026ec8fda800 Uncommon trap: reason=class_check action=maybe_recompile pc=0x0000026eada42f90 method=java.lang.String.equals(Ljava/lang/Object;)Z @ 8
+Event: 1.669 Thread 0x0000026ec8fda800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000026eadc0a174 method=java.lang.String.regionMatches(ZILjava/lang/String;II)Z @ 123
+Event: 1.722 Thread 0x0000026ec8fda800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000026eadd11dc4 method=com.sun.javafx.css.SimpleSelector.applies(Ljavafx/css/Styleable;[Ljava/util/Set;I)Z @ 37
+Event: 1.722 Thread 0x0000026ec8fda800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000026eadd11dc4 method=com.sun.javafx.css.SimpleSelector.applies(Ljavafx/css/Styleable;[Ljava/util/Set;I)Z @ 37
+Event: 1.722 Thread 0x0000026ec8fda800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000026eadd11dc4 method=com.sun.javafx.css.SimpleSelector.applies(Ljavafx/css/Styleable;[Ljava/util/Set;I)Z @ 37
+Event: 1.722 Thread 0x0000026ec8fda800 Uncommon trap: reason=array_check action=maybe_recompile pc=0x0000026eadd11dc4 method=com.sun.javafx.css.SimpleSelector.applies(Ljavafx/css/Styleable;[Ljava/util/Set;I)Z @ 37
+Event: 1.841 Thread 0x0000026ec8fda800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x0000026eadc22f28 method=jdk.internal.org.objectweb.asm.Type.getArgumentsAndReturnSizes(Ljava/lang/String;)I @ 47
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 1.200 Thread 0x0000026ec8fda800 Exception <a 'java/lang/NullPointerException'> (0x000000076d4388a8) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\interpreter\linkResolver.cpp, line 1185]
+Event: 1.200 Thread 0x0000026ec8fda800 Exception <a 'java/lang/NullPointerException'> (0x000000076d4388a8) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jvm.cpp, line 1527]
+Event: 1.610 Thread 0x0000026ec8fda800 Exception <a 'java/io/FileNotFoundException'> (0x000000076ea966b8) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\prims\jni.cpp, line 711]
+Event: 1.876 Thread 0x0000026ec8c7d800 Exception <a 'java/lang/NullPointerException'> (0x000000076f4c5920) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\interpreter\linkResolver.cpp, line 1287]
+Event: 1.878 Thread 0x0000026ec8c7d800 Exception <a 'java/lang/NullPointerException'> (0x000000076f4d4a70) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\interpreter\linkResolver.cpp, line 1287]
+Event: 2.304 Thread 0x0000026ec8c7d800 Exception <a 'java/lang/NullPointerException'> (0x000000076f4e1aa8) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\interpreter\linkResolver.cpp, line 1287]
+Event: 2.801 Thread 0x0000026ec8c7d800 Exception <a 'java/lang/NullPointerException'> (0x000000076f4eeae0) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\interpreter\linkResolver.cpp, line 1287]
+Event: 3.296 Thread 0x0000026ec8c7d800 Exception <a 'java/lang/NullPointerException'> (0x000000076f4fbb18) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\interpreter\linkResolver.cpp, line 1287]
+Event: 3.792 Thread 0x0000026ec8c7d800 Exception <a 'java/lang/NullPointerException'> (0x000000076f508b50) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\interpreter\linkResolver.cpp, line 1287]
+Event: 4.304 Thread 0x0000026ec8c7d800 Exception <a 'java/lang/NullPointerException'> (0x000000076f515b88) thrown at [C:\wsjdk\Corretto8Src\installers\windows\zip\corretto-build\buildRoot\src\hotspot\src\share\vm\interpreter\linkResolver.cpp, line 1287]
+
+Events (10 events):
+Event: 4.405 Thread 0x0000026ec8922800 flushing nmethod 0x0000026ead9c9650
+Event: 4.405 Thread 0x0000026ec8922800 flushing nmethod 0x0000026ead9cc910
+Event: 4.405 Thread 0x0000026ec8922800 flushing nmethod 0x0000026ead9cd5d0
+Event: 4.405 Thread 0x0000026ec8922800 flushing nmethod 0x0000026ead9cd990
+Event: 4.405 Thread 0x0000026ec8922800 flushing nmethod 0x0000026ead9d3890
+Event: 4.405 Thread 0x0000026ec8922800 flushing nmethod 0x0000026ead9d4ed0
+Event: 4.405 Thread 0x0000026ec8922800 flushing nmethod 0x0000026ead9d82d0
+Event: 4.405 Thread 0x0000026ec8922800 flushing nmethod 0x0000026ead9dcc10
+Event: 4.405 Thread 0x0000026ec8922800 flushing nmethod 0x0000026eada1eb90
+Event: 4.405 Thread 0x0000026ec8922800 flushing nmethod 0x0000026eada3f910
+
+
+Dynamic libraries:
+0x00007ff76a8a0000 - 0x00007ff76a8da000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\bin\java.exe
+0x00007ffb05970000 - 0x00007ffb05b68000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ffb04280000 - 0x00007ffb0433f000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ffb036f0000 - 0x00007ffb039ca000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ffb04040000 - 0x00007ffb040ee000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ffb03e20000 - 0x00007ffb03ebe000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ffb03f30000 - 0x00007ffb03fcc000 	C:\WINDOWS\System32\sechost.dll
+0x00007ffb05030000 - 0x00007ffb05156000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ffb05160000 - 0x00007ffb052fd000 	C:\WINDOWS\System32\USER32.dll
+0x00007ffb030d0000 - 0x00007ffb030f2000 	C:\WINDOWS\System32\win32u.dll
+0x00007ffb03af0000 - 0x00007ffb03b1b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ffb035e0000 - 0x00007ffb036f0000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ffb033e0000 - 0x00007ffb0347d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ffb032e0000 - 0x00007ffb033e0000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ffaf0260000 - 0x00007ffaf04fa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007ffb03ac0000 - 0x00007ffb03af0000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ffaede40000 - 0x00007ffaedf2f000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\msvcr120.dll
+0x00007ffaecbc0000 - 0x00007ffaecc66000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\msvcp120.dll
+0x000000005c5b0000 - 0x000000005ce20000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\server\jvm.dll
+0x00007ffb03ab0000 - 0x00007ffb03ab8000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007ffafb8f0000 - 0x00007ffafb8fa000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ffad92a0000 - 0x00007ffad92a9000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007ffaf3380000 - 0x00007ffaf33a7000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ffb05560000 - 0x00007ffb055cb000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ffafec60000 - 0x00007ffafec6f000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\verify.dll
+0x00007ffafd3d0000 - 0x00007ffafd3f9000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\java.dll
+0x00007ffafd3a0000 - 0x00007ffafd3ca000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\instrument.dll
+0x00007ffafec40000 - 0x00007ffafec56000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\zip.dll
+0x00007ffb048e0000 - 0x00007ffb05024000 	C:\WINDOWS\System32\SHELL32.dll
+0x00007ffb01140000 - 0x00007ffb018d3000 	C:\WINDOWS\SYSTEM32\windows.storage.dll
+0x00007ffb055d0000 - 0x00007ffb05924000 	C:\WINDOWS\System32\combase.dll
+0x00007ffb02ae0000 - 0x00007ffb02b0e000 	C:\WINDOWS\SYSTEM32\Wldp.dll
+0x00007ffb03cf0000 - 0x00007ffb03d9d000 	C:\WINDOWS\System32\SHCORE.dll
+0x00007ffb047b0000 - 0x00007ffb04805000 	C:\WINDOWS\System32\shlwapi.dll
+0x00007ffb02fc0000 - 0x00007ffb02fdf000 	C:\WINDOWS\SYSTEM32\profapi.dll
+0x00007ffaed440000 - 0x00007ffaed45a000 	D:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\bin\breakgen64.dll
+0x00007ffafd380000 - 0x00007ffafd39a000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\net.dll
+0x00007ffb02840000 - 0x00007ffb028aa000 	C:\WINDOWS\system32\mswsock.dll
+0x0000026ec8c90000 - 0x0000026ec8c93000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-console-l1-1-0.dll
+0x0000026ec8ca0000 - 0x0000026ec8ca3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-datetime-l1-1-0.dll
+0x0000026ec8cb0000 - 0x0000026ec8cb3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-debug-l1-1-0.dll
+0x0000026ec8cc0000 - 0x0000026ec8cc3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-errorhandling-l1-1-0.dll
+0x0000026ec8cd0000 - 0x0000026ec8cd4000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-file-l1-1-0.dll
+0x0000026ec8ce0000 - 0x0000026ec8ce3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-file-l1-2-0.dll
+0x0000026ec8cf0000 - 0x0000026ec8cf3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-file-l2-1-0.dll
+0x0000026ec8d00000 - 0x0000026ec8d03000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-handle-l1-1-0.dll
+0x0000026ec8d10000 - 0x0000026ec8d13000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-heap-l1-1-0.dll
+0x0000026ec8d20000 - 0x0000026ec8d23000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-interlocked-l1-1-0.dll
+0x0000026ec8d30000 - 0x0000026ec8d33000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-libraryloader-l1-1-0.dll
+0x0000026ec8d40000 - 0x0000026ec8d43000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-localization-l1-2-0.dll
+0x0000026ec8d50000 - 0x0000026ec8d53000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-memory-l1-1-0.dll
+0x0000026ec8d60000 - 0x0000026ec8d63000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-namedpipe-l1-1-0.dll
+0x0000026ec8d70000 - 0x0000026ec8d73000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-processenvironment-l1-1-0.dll
+0x0000026ec8d80000 - 0x0000026ec8d83000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-processthreads-l1-1-0.dll
+0x0000026ec8d90000 - 0x0000026ec8d93000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-processthreads-l1-1-1.dll
+0x0000026ec8da0000 - 0x0000026ec8da3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-profile-l1-1-0.dll
+0x0000026ec8db0000 - 0x0000026ec8db3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-rtlsupport-l1-1-0.dll
+0x0000026ec8dc0000 - 0x0000026ec8dc3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-string-l1-1-0.dll
+0x0000026ec8dd0000 - 0x0000026ec8dd3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-synch-l1-1-0.dll
+0x0000026ec8de0000 - 0x0000026ec8de3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-synch-l1-2-0.dll
+0x0000026ec8df0000 - 0x0000026ec8df3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-sysinfo-l1-1-0.dll
+0x0000026ec8e00000 - 0x0000026ec8e03000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-timezone-l1-1-0.dll
+0x0000026ec8e10000 - 0x0000026ec8e13000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-core-util-l1-1-0.dll
+0x0000026ec8e20000 - 0x0000026ec8e23000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-conio-l1-1-0.dll
+0x0000026ec8e30000 - 0x0000026ec8e34000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-convert-l1-1-0.dll
+0x0000026ec8e40000 - 0x0000026ec8e43000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-environment-l1-1-0.dll
+0x0000026ec8e50000 - 0x0000026ec8e53000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-filesystem-l1-1-0.dll
+0x0000026ec8e60000 - 0x0000026ec8e63000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-heap-l1-1-0.dll
+0x0000026ec8e70000 - 0x0000026ec8e73000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-locale-l1-1-0.dll
+0x0000026ec8e80000 - 0x0000026ec8e85000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-math-l1-1-0.dll
+0x0000026ec8e90000 - 0x0000026ec8e95000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-multibyte-l1-1-0.dll
+0x0000026ec8ea0000 - 0x0000026ec8eb0000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-private-l1-1-0.dll
+0x0000026ec8eb0000 - 0x0000026ec8eb3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-process-l1-1-0.dll
+0x0000026ec8ec0000 - 0x0000026ec8ec4000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-runtime-l1-1-0.dll
+0x0000026ec8ed0000 - 0x0000026ec8ed4000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-stdio-l1-1-0.dll
+0x0000026ec8ee0000 - 0x0000026ec8ee4000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-string-l1-1-0.dll
+0x0000026ec8ef0000 - 0x0000026ec8ef3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-time-l1-1-0.dll
+0x0000026ec8f00000 - 0x0000026ec8f03000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\api-ms-win-crt-utility-l1-1-0.dll
+0x00007ffaecac0000 - 0x00007ffaecbbc000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\ucrtbase.dll
+0x00007ffaed420000 - 0x00007ffaed435000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\vcruntime140.dll
+0x00007ffac5a70000 - 0x00007ffac5b0b000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\msvcp140.dll
+0x00007ffaed180000 - 0x00007ffaed1d1000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\concrt140.dll
+0x00007ffaece80000 - 0x00007ffaecea3000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\prism_d3d.dll
+0x00007ffaf2900000 - 0x00007ffaf2acd000 	C:\WINDOWS\system32\d3d9.dll
+0x00007ffb00f40000 - 0x00007ffb00f52000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ffb00c50000 - 0x00007ffb00c7f000 	C:\WINDOWS\SYSTEM32\dwmapi.dll
+0x00007ffb00a70000 - 0x00007ffb00b0e000 	C:\WINDOWS\system32\uxtheme.dll
+0x00007ffab93f0000 - 0x00007ffab9553000 	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_e601c1e2774dbfe2\igdumdim64.dll
+0x00007ffb04150000 - 0x00007ffb0427a000 	C:\WINDOWS\System32\ole32.dll
+0x00007ffab08b0000 - 0x00007ffab5035000 	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_e601c1e2774dbfe2\igd9dxva64.dll
+0x00007ffb04810000 - 0x00007ffb048dd000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ffb04340000 - 0x00007ffb047a8000 	C:\WINDOWS\System32\SETUPAPI.dll
+0x00007ffb03080000 - 0x00007ffb030ce000 	C:\WINDOWS\System32\cfgmgr32.dll
+0x00007ffb03170000 - 0x00007ffb03197000 	C:\WINDOWS\System32\bcrypt.dll
+0x00007ffaf6a60000 - 0x00007ffaf6ce1000 	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_e601c1e2774dbfe2\igdgmm64.dll
+0x00007ffae61a0000 - 0x00007ffae61e5000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\glass.dll
+0x00007ffb039d0000 - 0x00007ffb03aaa000 	C:\WINDOWS\System32\COMDLG32.dll
+0x00007ffa9bff0000 - 0x00007ffa9c129000 	C:\ProgramData\A-Volute\A-Volute.Nahimic\Modules\Scheduled\x64\AudioDevProps2.dll
+0x00007ffad7b50000 - 0x00007ffad7ba7000 	C:\Program Files\Huawei\PCManager\plugins\PerfWndMonModule.dll
+0x00007ffb03b40000 - 0x00007ffb03c54000 	C:\WINDOWS\System32\MSCTF.dll
+0x00007ffb031a0000 - 0x00007ffb03222000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ffab8f20000 - 0x00007ffab8f47000 	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_e601c1e2774dbfe2\igdinfo64.dll
+0x00007ffaf3bf0000 - 0x00007ffaf6a34000 	C:\WINDOWS\System32\DriverStore\FileRepository\iigd_dch.inf_amd64_e601c1e2774dbfe2\igc64.dll
+0x00007ffaf8fd0000 - 0x00007ffaf900b000 	C:\WINDOWS\SYSTEM32\dxcore.dll
+0x00007ffaed130000 - 0x00007ffaed144000 	C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\bin\javafx_font.dll
+0x00007ffaf3030000 - 0x00007ffaf32af000 	C:\WINDOWS\SYSTEM32\dwrite.dll
+0x00007ffb05300000 - 0x00007ffb053a9000 	C:\WINDOWS\System32\clbcatq.dll
+0x00007ffafc720000 - 0x00007ffafc8d4000 	C:\WINDOWS\SYSTEM32\WindowsCodecs.dll
+0x00007ffae1330000 - 0x00007ffae136e000 	C:\WINDOWS\system32\dataexchange.dll
+0x00007ffaff400000 - 0x00007ffaff663000 	C:\WINDOWS\system32\d3d11.dll
+0x00007ffaffd90000 - 0x00007ffafff73000 	C:\WINDOWS\system32\dcomp.dll
+0x00007ffb01940000 - 0x00007ffb01a33000 	C:\WINDOWS\system32\dxgi.dll
+0x00007ffafc9a0000 - 0x00007ffafcba0000 	C:\WINDOWS\system32\twinapi.appcore.dll
+0x00007ffaeb4b0000 - 0x00007ffaeb4e4000 	C:\Program Files\Common Files\Microsoft Shared\Ink\rtscom.dll
+0x00007ffae5af0000 - 0x00007ffae5be9000 	C:\WINDOWS\SYSTEM32\textinputframework.dll
+0x00007ffb00300000 - 0x00007ffb0065e000 	C:\WINDOWS\System32\CoreUIComponents.dll
+0x00007ffb00670000 - 0x00007ffb00762000 	C:\WINDOWS\System32\CoreMessaging.dll
+0x00007ffb02210000 - 0x00007ffb02243000 	C:\WINDOWS\SYSTEM32\ntmarta.dll
+0x00007ffaffc30000 - 0x00007ffaffd84000 	C:\WINDOWS\SYSTEM32\wintypes.dll
+0x00007ffaf0150000 - 0x00007ffaf01b6000 	C:\WINDOWS\system32\Oleacc.dll
+
+VM Arguments:
+jvm_args: -Dvisualvm.id=24902428012000 -javaagent:D:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\lib\idea_rt.jar=53349:D:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\bin -Dfile.encoding=UTF-8 
+java_command: sample.Main
+java_class_path (initial): C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\charsets.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\access-bridge-64.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\cldrdata.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\dnsns.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\jaccess.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\jfxrt.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\localedata.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\nashorn.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\sunec.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\sunjce_provider.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\sunmscapi.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\sunpkcs11.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\ext\zipfs.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\jce.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\jfr.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\jfxswt.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\jsse.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\management-agent.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\resources.jar;C:\Users\其然乐衣Letitbe\.jdks\corretto-1.8.0_312\jre\lib\rt.jar;D:\其然乐衣Letitbe\学业课程\大三下\编译原理\课设\code\compilerEXE\out\production\h-c;C:\Users\其然乐衣Letitbe\.m2\repository\org\projectlombok\lombok\1.18.18\lombok-1.18.18.jar;D:\Program Files\JetBrains\IntelliJ IDEA 2021.3.3\lib\idea_rt.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\Java
+PATH=D:\Program Files (x86)\VMware\VMware Workstation\bin\;D:\Program Files\MySQL\MySQL Server 5.5\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR\;C:\Program Files (x86)\Yozosoft\Yozo_Office\Lib\xuggler\bin;D:\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\Users\其然乐衣Letitbe\Maven\apache-maven-3.6.0-bin\apache-maven-3.6.0\bin;C:\Program Files\PuTTY\;D:\texlive\texlive\2021\bin\win32;D:\Java\数据库MySQL\mysql-8.0.28-winx64\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;%ERLANG_HOME%\bin;D:\Program Files (x86)\NetSarang\Xftp 7\;D:\Git\cmd;D:\Program Files (x86)\NetSarang\Xshell 7\;D:\nvm;D:\nodejs;"D:\nodejs;D:\nodejs\node_global;";D:\Typora\RunningYuBlog\node_modules\hexo\node_modules\.bin;D:\Typora\RunningYuBlog\node_modules\hexo\node_modules;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\其然乐衣Letitbe\AppData\Local\Microsoft\WindowsApps;D:\Program Files\JetBrains\IntelliJ IDEA 2021.3.1\bin;;D:\altera\13.1\modelsim_ae\win32aloem;D:\altera\13.1\modelsim_ase\win32aloem;D:\nodejs\node_global;D:\nvm;D:\nodejs;D:\APP\Vscode\Microsoft VS Code\bin;D:\nodejs\node_cache;D:\Typora\RunningYuBlog\node_modules\hexo\node_modules\.bin
+USERNAME=其然乐衣Letitbe
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 142 Stepping 12, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10.0 , 64 bit Build 19041 (10.0.19041.2788)
+
+CPU:total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 142 stepping 12, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, 3dnowpref, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2, adx
+
+Memory: 4k page, physical 16601588k(2416904k free), swap 16601588k(908k free)
+
+vm_info: OpenJDK 64-Bit Server VM (25.312-b07) for windows-amd64 JRE (1.8.0_312-b07), built on Oct 14 2021 21:08:49 by "Administrator" with MS VC++ 12.0 (VS2013)
+
+time: Sun May 14 21:55:04 2023
+timezone: ?D1ú±ê×?ê±??
+elapsed time: 4.420924 seconds (0d 0h 0m 4s)
+

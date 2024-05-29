@@ -1,0 +1,23 @@
+//����һ�������Ĳ��ԣ�����һ�������������7
+
+
+void main(){
+
+    int a = 1 ;
+
+    int N = read() ;
+
+    a = sum(sum(3,4),N) ;
+    write(a);
+
+}
+
+int sum(int sumX,int sumY){
+
+    int result ;
+    result = sumX + sumY ;
+
+    return result ;
+
+}
+

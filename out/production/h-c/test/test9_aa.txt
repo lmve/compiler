@@ -1,0 +1,35 @@
+
+
+int seq(int m) {
+  int i,fa;
+  i=0;
+  if(m<=1)
+    {
+
+	fa=1;
+     }
+   if(m>1){
+         fa=m+seq(m-1);
+     }
+
+
+
+
+   return fa;
+}
+
+
+void main()
+
+{
+
+   int n;
+	
+   n=read();
+
+   write(seq(n));
+
+}
+
+
+
